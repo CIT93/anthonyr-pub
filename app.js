@@ -5,4 +5,4 @@ const showOnPage = function (text) {
     outputDiv.append(newParagraph)
   }
 
-  console.log("Hello World")
+  showOnPage("Hello World")
