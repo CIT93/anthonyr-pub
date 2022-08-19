@@ -1,8 +1,3 @@
-const showOnPage = function (text) {
-    let newParagraph = document.createElement("p")
-    newParagraph.innerHTML = text
-    let outputDiv = document.getElementById("output")}
-    
 let itIsMonday = false
 let itIsTuesday = true
 let itIsWednesday = false
@@ -11,8 +6,6 @@ let itIsFriday = false
 let itIsSaturday = false
 let itIsSunday = false
 let gasTankPercentage = 10
-
-showOnPage(<b>The output on this page depends on what information is true</b>)
 
 //My daily tasks will depend on what day of the week it is.
 
