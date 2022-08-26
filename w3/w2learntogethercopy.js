@@ -5,12 +5,7 @@ const showOnPage = function (text) {
     let outputDiv = document.getElementById("output")
     outputDiv.append(newParagraph)
   }
-
-showOnPage("<b>This list consists of tasks you should complete today , which are based off the global variables below. Have a great day!.<b> ")
-showOnPage("Day of the week___>" + day)
-showOnPage("Gas Tank Level___>" + gasTankPercentage + " %")
-showOnPage("---END GLOBAL VARIABLE DATA---")
-showOnPage("<b>Today's Tasks<b>")
+  
 
 let scheduledPlan = function (dayOfWeek, tankPercentage){
     let gasTankPercentage = tankPercentage
@@ -48,11 +43,20 @@ if(day===1){
         day = "Sunday"
         coursework = "set aside extra time to prepare for the upcoming school week"
     }
+    showOnPage("<b>This list consists of tasks you should complete today, which are based off the global variables below. Have a great day!.<b> ")
+    showOnPage("Day of the week___>" + `${day}` )
+    showOnPage("Gas Tank Level___>" + `${gasTankPercentage}`)
+    showOnPage("---END GLOBAL VARIABLE DATA---")
+    showOnPage("<b>Today's Tasks<b>")
     return `Today is ${day}, you must ${coursework}. Your gas tank is ${gasTankPercentage}, ${fillOrNot}.`
-}
-  let result = scheduledPlan(7,20)
 
-    showOnPage(result)
+}
+let result = scheduledPlan(7,20)
+
+showOnPage(result)
+
+
+
 
    
     
