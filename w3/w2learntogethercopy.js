@@ -6,10 +6,9 @@ const showOnPage = function (text) {
     outputDiv.append(newParagraph)
   }
 
-showOnPage("<b>This list consists of tasks you should complete today, which are based off the global variables below. Have a great day!.<b> ")
+showOnPage("<b>This list consists of tasks you should complete today , which are based off the global variables below. Have a great day!.<b> ")
 showOnPage("Day of the week___>" + day)
 showOnPage("Gas Tank Level___>" + gasTankPercentage + " %")
-showOnPage("Do I need to go to the post office?___>" + postOfficeTrip)
 showOnPage("---END GLOBAL VARIABLE DATA---")
 showOnPage("<b>Today's Tasks<b>")
 
@@ -54,19 +53,6 @@ if(day===1){
   let result = scheduledPlan(7,20)
 
     showOnPage(result)
-//Assuming the first day of the week is Monday ^^^
-let gasFillUp = function (gasTankPercentage) {
-    if (gasTankPercentage >=50){
-        showOnPage("You have enough gasoline to get you through the week.")
-}else if (gasTankPercentage <50 && gasTankPercentage >29){
-
-}else{
-    showOnPage("You're running low on gas, make sure to fill up today.")}
-    return `Your gas tank is ${gasTankPercentage}% full, ${fillOrNot}.`
-}
-
-//I have a combination of in-person and onine classes, planning for them is important.
-//I make sure to prepare for the week on Sundays.
 
    
     
